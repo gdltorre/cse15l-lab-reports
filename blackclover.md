@@ -8,7 +8,7 @@ Barely starting, but it's getting better with each episode
 **Jujutsu Kaisen**
 
 Waiting for the movie and new season :'(
-![Image](http://url/a.png)
+![Image](https://static.wikia.nocookie.net/jujutsu-kaisen/images/8/88/Anime_Key_Visual_2.png/revision/latest?cb=20201212034001)
 
 **Kimetsu no Yaiba**
 
