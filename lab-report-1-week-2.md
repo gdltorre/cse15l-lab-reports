@@ -4,16 +4,12 @@
 
 Welcome incoming students 15L students and future me! In this Lab report, I will be writing a tutorial for how to log into  course-specific account on ieng6. This Lab report will be a blog post that describes all the required steps and it will even have screenshots to guide you all.
 
----
-
 ## Step 1: Installing VSCode
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. To install, first go to the [Visual Studio Code Website](https://gdltorre.github.io/cse15l-lab-reports/lab-report-1-week-2.html) and download the file for your corresponding operating system. After that, open the file you just downloaded and follow the instructions for installing.
 ![Image](VSCode_Screenshot.PNG)
 
 Once installed, you should be able to open a window that looks like this (Colors might be different depending on the settings you choose).
 ![Image](VSCode_Screenshot2.PNG)
-
----
 
 ## Step 1.5: Installing OpenSSH (Windows Users)
 
@@ -68,7 +64,7 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
     Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
 }
 ```
----
+
 ## Step 2: Finding your Account
 Now that you are done installing OpenSSH, or if you are not a Windows User, the following step is to check what your course-specific account is. For this course, and many other CSE courses, you will be utilizing course-specific accounts. These are similar to accounts you might get on other systems at other institutions (or a future job). To find your account, you will need to [visit this link](https://sdacs.ucsd.edu/~icc/index.php) and input your information for the system to look you up.
 ![Image](AccountLookUp.PNG)
@@ -78,7 +74,6 @@ After clicking submit, you will be re-directed to a website that contains inform
 
 Once you are here, you will need to change your password for your account to be activated. Changing your password will also change it for your TritonLink account, if you don't want that to happen checkmark the box indicating so. You will need to wait a few minutes (5-15) for the password change to take effect. In some cases, you might be required to wait longer than that.
 
----
 
 ## Step 3: Remotely Connecting
 
@@ -98,7 +93,6 @@ When you are connecting to a server for the first time, it is likely for that me
 
 Now, you have been successful connecting your computer to the CSE basement, or wherever you are connecting to! Any commands you run now will be run on the computer you are connected to. Some terminology used is that your computer is the client and the computer you connected to is the server
 
----
 
 ## Step 4: Trying Some Commands
 Now, there are some commands that you can try out while being connected to the computer. Try the following commands:
@@ -120,7 +114,6 @@ These are some of the commands that print out interesting results when connected
 exit
 ```
 
----
 
 ## Step 5: Moving Files With SCP
 One key step when working remotely is to be able to send files back and forth between the user and the client. The command that allows us to do so is the command scp
@@ -168,7 +161,6 @@ Your complete output should be similar to this
 
 Compare and contrast the difference between running it on the client and the server!
 
----
 
 ## Step 6: Setting an SSH Key
 An ssh key is the solution to the constant necessity of having to input our password everytime we log in, run commands, or copy files with ssh and scp. Is convenient to have an ssh key because it saves you a lot of time on the long run. To set up an ssh key, run the following command on your computer (VSCode)
@@ -199,7 +191,6 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
----
 
 ## Step 6.5: Additional Steps for Windows Users
 You will need to run additional commands on PowerShell if you are a Windows user. To run the commands, run PowerShell as an Administrator.
@@ -236,7 +227,6 @@ scp C:\Users\Jerry/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_ke
 ```
 Now that you are done, you should be able to ssh or scp from this client without entering your password, enjoy!
 
----
 
 ## Step 7: Optimizing Remote Running
 There are additional ways to make remote running more pleasant. Some of the ways that I know are the following:
@@ -253,4 +243,3 @@ javac WhereAmI.java; java WhereAmI
 ![Image](MultipleCommands.PNG)
 * You can retrieve the last command you ran using the up-arrow key on your keyboard
 
----
