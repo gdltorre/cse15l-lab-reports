@@ -5,7 +5,7 @@
 Welcome incoming students 15L students and future me! In this Lab report, I will be writing a tutorial for how to log into  course-specific account on ieng6. This Lab report will be a blog post that describes all the required steps and it will even have screenshots to guide you all.
 
 ## Step 1: Installing VSCode
-Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. To install, first go to the [Visual Studio Code Website](https://gdltorre.github.io/cse15l-lab-reports/lab-report-1-week-2.html) and download the file for your corresponding operating system. After that, open the file you just downloaded and follow the instructions for installing.
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. To install, first go to the [Visual Studio Code Website](https://code.visualstudio.com/) and download the file for your corresponding operating system. After that, open the file you just downloaded and follow the instructions for installing.
 ![Image](VSCode_Screenshot.PNG)
 
 Once installed, you should be able to open a window that looks like this (Colors might be different depending on the settings you choose).
