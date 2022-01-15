@@ -21,7 +21,9 @@ To begin installation, first run PowerShell as an Administrator and run the foll
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
-![Image](WindowsPowerShell.PNG)
+![Image](WindowsPowerShell.png)
+
+
 ![Image](WindowsPowerShell2.PNG)
 
 Running the cmdlet should return the following output if neither OpenSSH.server or OpenSSH.client are installed
