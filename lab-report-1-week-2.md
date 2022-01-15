@@ -67,9 +67,13 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 
 ## Step 2: Finding your Account
 Now that you are done installing OpenSSH, or if you are not a Windows User, the following step is to check what your course-specific account is. For this course, and many other CSE courses, you will be utilizing course-specific accounts. These are similar to accounts you might get on other systems at other institutions (or a future job). To find your account, you will need to [visit this link](https://sdacs.ucsd.edu/~icc/index.php) and input your information for the system to look you up.
+
+
 ![Image](AccountLookUp.PNG)
 
 After clicking submit, you will be re-directed to a website that contains information about account. When you are there, you will need to click the button for class that you are interested in knowing your account. In this case, it's going to be cs15lwi22YourUsername, in my case my username is *ajw*
+
+
 ![Image](AccountLookUp2.PNG)
 
 Once you are here, you will need to change your password for your account to be activated. Changing your password will also change it for your TritonLink account, if you don't want that to happen checkmark the box indicating so. You will need to wait a few minutes (5-15) for the password change to take effect. In some cases, you might be required to wait longer than that.
