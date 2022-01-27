@@ -249,3 +249,27 @@ javac WhereAmI.java; java WhereAmI
 ![Image](MultipleCommands.PNG)
 * You can retrieve the last command you ran using the up-arrow key on your keyboard
 
+**Counting the Keystrokes it Took**
+
+Our goal is being able to run the above code in less than 10 key strokes.
+- Keystroke 1: There is a command that allows us to run code and then exit the remote server. Given that the command has been provided above in the lab report, we will spend one keystroke at clicking the beginning of the line and dragging it to the end of the line to copy the entire command.
+- Keystroke 2 and 3: After we highlighted the line we are interested in copying, we press the key Ctrl/Command plus the key C to copy
+- Keystroke 4: After copying the line of code, we click on the terminal for us to be able to enter the code
+- Keystroke 5 and 6: We press the key Ctrl/Command plus the key V to paste what we have copied down.
+- Keystroke 7: We press enter to run that line
+
+Previously, even after copying down the entire line of code you would still need to enter your password, which has a minimum length of around 8, meaning it was impossible to achieve this in under 10 keystrokes without utilizing a SSH key.
+
+**Another example of Keystrokes**
+
+Another example of minimizing the amount of keystrokes required is running a code that was run previously after making changes to it.
+- Keystroke 1 and 2: The first thing to do is save the current file you edited. You can easily achieve that through pressing key Ctrl/Command plus key S
+- Keystroke 3: After that, head over to the terminal and click on it for us to be able to type on it.
+- Keystroke 4 and 5: Just as it was mentioned previously, you can retrieve the last command you ran using the up-arrow key on your keyboard. Press it to retrieve the line of code where you compiled the file. For me, it usually takes me pressing the arrow key twice, as I compile and then run the file.
+- Keystroke 6: Now that we already have the line of code to compile the file, we press the enter key to run the code and compile the file.
+- Keystroke 7 and 8: Once again we want to retrieve the code used previously to run the file. As I mentioned before, this usually takes two keystrokes.
+- Keystroke 9: Now that we have the line of code to run we file, we just press enter.
+
+Ta-Da! We have managed to run code in two situations in less than 10 keystrokes because of things we have learned during this lab report!
+
+
