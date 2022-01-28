@@ -21,7 +21,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 *Describing the Relationship*
 
-As we can see, the symptom is that the program throws an IndexOutOfBoundsException in main because we tried to reach an index that does not exist. The bug happens because when the program calls the method add() on line 18, closeParen has a value of -1 because of the failure inducing input of providing a file that does not contain any link. The original file did not account for not receiving any links at all. 
+As we can see, the symptom is that the program throws an IndexOutOfBoundsException in main because we tried to reach an invalid index. The bug happens because when the program calls the method add() on line 18, closeParen has a value of -1 because we provided a failure inducing input, which is the file that contains no links. The original file did not account for not receiving any links at all and that's why it returns an error
 
 ## Second Code Change
 
@@ -44,6 +44,7 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 ```
 
 *Describing the Relationship*
+
 Here, the sympton is the IndexOutOfBoundsException that the program runs when we try to pass the failure-inducing input, which is the file that does not contain any links. The bug is that because the file does not contain any links, when we use the method indexOf on lines 14 and 15, the fields will receive a value of -1 and then later when trying to reach those indices, the IndexOutOfBounds exception will be thrown because index -1 is not reachable.
 
 ## Third Code Change
