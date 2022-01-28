@@ -32,7 +32,7 @@ The second code that I will be showing is one of my classmate's. My classmate, A
 
 *Link to the test File*
 
-[Failure Inducing Input 2](https://gdltorre.github.io/markdown-parse/test-file2.md)
+[Failure Inducing Input 2](https://gdltorre.github.io/markdown-parse/empty-file.md)
 
 *Output of Running the File Before Fixing it*
 ```
