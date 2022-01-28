@@ -56,7 +56,7 @@ The third code that I will be showing is another one of my classmate's. My class
 
 *Link to the test File*
 
-[Failure Inducing Input 3](https://gdltorre.github.io/markdown-parse/break_file.md)
+[Failure Inducing Input 3](https://gdltorre.github.io/markdown-parse/break-file.md)
 
 *Output of Running the File Before Fixing it*
 ```
