@@ -44,4 +44,4 @@ We can now easily do it with
 scp filename.file ieng6:~
 ```
 On my terminal, it looks like this:
-![Image](screenshot5.PNG)
+![Image](screenshot5.png)
