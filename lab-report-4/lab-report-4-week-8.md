@@ -11,11 +11,12 @@ here is the [link](https://github.com/w2llS/markdown-parse) to the repository I 
 According to [CommonMark demo site](https://spec.commonmark.org/dingus/), Snippet 1 should produce the following output:
 ![Image](SS3.PNG)
 
+By simple inspection, one would think that the only valid link is "another link", which corresponds to google.com. However, because the last two links ("cod[e", "code]") can be clicked, they are valid links too 
+
 **Turning it into a test:**
 
-We can see from CommonMark that in snippet 1 there is only one valid link, which is "another link" that corresponds to "`google.com". Because of this, I created a test that should check that MarkdownParse ignores the other links and only prints out the link corresponding to "another link".
+Like I mentioned, we can see from CommonMark that in snippet 1 there are three valid links, which is "another link" that corresponds to "`google.com", "cod[e" which corresponds to "google.com" and "[`code]`]" which corresponds to "ucsd.edu". Because of this, I created a test that should check that MarkdownParse successfully identifies the last three links as valid links and ignores the first one.
 
-We can see from CommonMark that in snippet 1 there's only one valid link, which is https://ucsd-cse15l-wi22.github.io/. It's the link that has the title "this title text is really long and takes up more than one line". Because of this, I created a test that should check that MarkdownParse ignores the other links and only prints the one mentioned above
 ![Image](SS2.PNG)
 
 **My implementation output:**
@@ -31,7 +32,7 @@ The corresponding output from running the test on the implementation I reviewed 
 
 ![Image](SS5.PNG)
 
-The implementation I reviewed failed the test too, however it fast more efficient on deciding which links were actual links, as my output printed 3 links and this output only printed 2.
+The implementation I reviewed failed the test too and they were equally effective (or uneffective?) on determining which links were valid
 
 **Do you think there is a small code change that will make your program work for snippet 1?**
 
