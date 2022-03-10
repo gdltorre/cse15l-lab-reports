@@ -15,7 +15,7 @@ By simple inspection, one would think that the only valid link is "another link"
 
 **Turning it into a test:**
 
-Like I mentioned, we can see from CommonMark that in snippet 1 there are three valid links, which is "another link" that corresponds to "`google.com", "cod[e" which corresponds to "google.com" and "[`code]`]" which corresponds to "ucsd.edu". Because of this, I created a test that should check that MarkdownParse successfully identifies the last three links as valid links and ignores the first one.
+Like I mentioned, we can see from CommonMark that in snippet 1 there are three valid links, which is "another link" that corresponds to "\`google.com", "cod[e" which corresponds to "google.com" and "[\`code]`]" which corresponds to "ucsd.edu". Because of this, I created a test that should check that MarkdownParse successfully identifies the last three links as valid links and ignores the first one.
 
 ![Image](SS2.PNG)
 
