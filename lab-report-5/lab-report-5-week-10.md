@@ -5,7 +5,7 @@
 The way that I found the tests with different results was through running a script that uses a for loop to print the name of each test in the file and its corresponding result. 
 ![IMAGE](SS1.PNG)
 
-Then, through output redirection I was able to store the results of running the script for my implementation and for the implementation on different txt files 
+Then, through output redirection I was able to store the results of running the script for my implementation and for the given implementation on different txt files 
 ```
 bash script.sh > results.txt
 ```
@@ -52,7 +52,7 @@ On the other hand, my implementation did not even consider the first link as a v
 
 **The problem with the code**
 
-The first problem with the given implementation is that the link it considers is whatever is inside of the parentheses and because of this it omits whatever is before it and after it. Because of this "my_" is omitted from the link output. 
+The problem with the given implementation is that the link it returns is whatever is inside of the parentheses and because of this it omits whatever is before it and after them. Because of this "my_" is omitted from the link output. 
 ![IMAGE](SS8.PNG)
 
 
@@ -126,9 +126,13 @@ On the other hand, the problem with my implementation is that it does not have a
 
 **Which implementation is correct?**
 
-The given implementation is the correct one because according to CommonMark, "[link](foo(and(bar)))" should take us to the link "foo(and(bar))" just like the given implementation predicts. On the other hand, my implementation returns a similar link but it's still missing the last parenthesis
+The given implementation is the correct one because according to CommonMark, "[link](foo(and(bar)))" should take us to the link "foo(and(bar))" just like the given implementation predicts. On the other hand, my implementation returns a similar link but it's missing the last parenthesis
 
 **The problem with the code**
+
+The problem with the code is that my implementation stops after finding the first occurence of a close parenthesis and it does not consider the fact that a link may contain extra parentheses. Thus, because this link had two parenthesis at the end it got cut short on the first one.
+![IMAGE](SS13.PNG)
+
 
 
 
