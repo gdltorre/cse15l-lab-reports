@@ -83,7 +83,7 @@ Similarly, the problem with my implementation is that it only considers a link v
 
 **Which implementation is correct?**
 
-According to [CommonMark](https://spec.commonmark.org/dingus/) this should be considered a link that takes you to "bar*". Because of this, even though my implementation is successful in determining this link as a "valid link" it takes you to "/bar\* "ti\*tle"" instead of "bar*", thus my implementation is not correct. Furthermore, because the given implementation does not return any link it is also incorrect. Thus, neither implementation is correct in this test. 
+According to [CommonMark](https://spec.commonmark.org/dingus/) this should be considered a link that takes you to "bar\*". Because of this, even though my implementation is successful in determining this link as a "valid link" it takes you to "/bar\\* "ti\\*tle"" instead of "bar\*", thus my implementation is not correct. Furthermore, because the given implementation does not return any link it is also incorrect. Thus, neither implementation is correct in this test. 
 
 **The problem with the code**
 
